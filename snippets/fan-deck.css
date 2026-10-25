@@ -1,0 +1,82 @@
+/*
+ * Fanned card deck, sized by the space it actually has.
+ *
+ * A container query (not a media query) decides the layout, so a browser
+ * sidebar or split screen counts: wide enough → the fan, narrow (phones) →
+ * a sticky deck that stacks as you scroll. fan-deck.ts writes data-pos.
+ */
+.deck-wrap {
+  container-type: inline-size;
+}
+
+/* fan: every card shares one grid cell, so the deck is only as tall as one card */
+@container (min-width: 640px) {
+  .deck {
+    display: grid;
+    grid-template-areas: 'deck';
+    justify-items: center;
+    align-items: center;
+    padding-top: 36px;
+  }
+  .card {
+    grid-area: deck;
+    width: min(330px, 80%); /* just wider than the longest row, so nothing wraps */
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  /* a veil fades every card that isn't in front */
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--paper);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+  }
+  .card:not([data-pos='0']) {
+    cursor: pointer;
+  }
+  .card:not([data-pos='0'])::after {
+    opacity: 0.55;
+  }
+  .card[data-pos='0'] {
+    z-index: 4;
+    transform: none;
+  }
+  .card[data-pos='1'] {
+    z-index: 3;
+    transform: translateX(56%) rotate(7deg) scale(0.9);
+  }
+  .card[data-pos='-1'] {
+    z-index: 3;
+    transform: translateX(-56%) rotate(-7deg) scale(0.9);
+  }
+  .card[data-pos='2'] {
+    z-index: 1;
+    transform: translateY(-8%) scale(0.8);
+  }
+}
+
+/* phones: a sticky deck. A grid item can only stick inside its own cell, so this is a plain stack */
+@container (max-width: 639px) {
+  .deck {
+    display: block;
+  }
+  .card + .card {
+    margin-top: 14px;
+  }
+  .card {
+    position: sticky;
+    top: calc(var(--header-h) + 4px + var(--i) * 12px); /* each card pins a little lower than the last */
+    width: min(100%, 330px);
+    margin-inline: auto;
+  }
+}
+
+/* fan-deck.ts adds this for one frame to snap a card back before replaying its draw-in */
+.card.is-resetting,
+.card.is-resetting *,
+.card.is-resetting *::before {
+  transition: none !important;
+}
