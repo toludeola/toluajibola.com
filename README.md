@@ -27,7 +27,7 @@ The tagline is the thesis: **revenue is a system, and I engineer it.** The site 
 
 **The idea: revenue is a system.** My work is wiring the pipeline, the handoffs and the data that a revenue team runs on, so the site should feel like a working system rather than a brochure. Data flows through the hero into a "classify → route" hub, an engine log replays the kinds of events my systems handle, and every outcome counts up from its "before" to its "after". Even the career section is a changelog, with each role shipped as a version.
 
-**Warm and colourful, not neutral.** I took cues from two sites I admire: oyin.design for its warmth and editorial confidence, and wodniack.dev for motion that feels engineered. Neither was a blueprint. The result is a warm paper and deep plum base with one orange "signal" colour reserved for anything you can act on (buttons, arrows, highlights), plus a soft pastel for each system so every project has its own identity. Both light and dark themes were designed on purpose, not inverted.
+**Warm and colourful, not neutral.** A warm paper and deep plum base with one orange "signal" colour reserved for anything you can act on (buttons, arrows, highlights), plus a soft pastel for each system so every project has its own identity. Both light and dark themes were designed on purpose, not inverted.
 
 **Type with a voice.** A tall serif (Instrument Serif) carries the headlines and gives the personality. A clean sans (Instrument Sans) keeps the reading easy, and a monospace (Geist Mono) handles labels, so the small print reads like system output.
 
