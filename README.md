@@ -61,10 +61,6 @@ Four rules run through the work, and the site animates each one:
 | Selected systems, on hover | Outcomes |
 | :-: | :-: |
 | ![Each system row fills with its colour on hover, with a small floating preview of its artwork](media/sections/systems-hover.jpg) | ![Outcome cards with odometer numbers and before/after bars](media/sections/outcomes.jpg) |
-| **How I build** | **Toolkit** |
-| ![Principle cards stacking as you scroll, with a faint echo of the current card's icon](media/sections/principles.jpg) | ![Capability cards fanned like a hand, rotating every few seconds](media/sections/toolkit.jpg) |
-| **About** | **A case study** |
-| ![An arched portrait beside the about copy](media/sections/about.jpg) | ![The Carrier Handover Agent case study, with its artwork and headline result](media/sections/case-study.jpg) |
 
 ## Highlights
 
