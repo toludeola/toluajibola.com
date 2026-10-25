@@ -21,6 +21,22 @@ A hand-built portfolio that replaced a Framer template. It's designed for people
 
 The tagline is the thesis: **revenue is a system, and I engineer it.** The site tries to behave like one. Data flows through the hero, a live "revenue engine" log replays real kinds of events, and every outcome counts up from its "before" to its "after".
 
+## How I wanted it to look
+
+**I didn't want another template.** My old site was a Framer theme: tidy, but it could have belonged to anyone. I wanted something that felt like me and that made the case for the kind of work I do before anyone read a word.
+
+**The idea: revenue is a system.** My work is wiring the pipeline, the handoffs and the data that a revenue team runs on, so the site should feel like a working system rather than a brochure. Data flows through the hero into a "classify → route" hub, an engine log replays the kinds of events my systems handle, and every outcome counts up from its "before" to its "after". Even the career section is a changelog, with each role shipped as a version.
+
+**Warm and colourful, not neutral.** I took cues from two sites I admire: oyin.design for its warmth and editorial confidence, and wodniack.dev for motion that feels engineered. Neither was a blueprint. The result is a warm paper and deep plum base with one orange "signal" colour reserved for anything you can act on (buttons, arrows, highlights), plus a soft pastel for each system so every project has its own identity. Both light and dark themes were designed on purpose, not inverted.
+
+**Type with a voice.** A tall serif (Instrument Serif) carries the headlines and gives the personality. A clean sans (Instrument Sans) keeps the reading easy, and a monospace (Geist Mono) handles labels, so the small print reads like system output.
+
+**Motion that means something.** Nothing moves just to move. Lines carry data, numbers roll to their real values, cards stack the way work queues up, and animations replay when you scroll back instead of playing once and going still.
+
+**Phones as their own design.** On mobile, systems, outcomes and principles become sticky card decks you scroll through, an idea I kept from my old site because it felt right in the hand.
+
+**Sweating the details.** Spacing follows one rhythm, so the gap under a block matches the gap above it. Layouts respond to the space they actually have, so opening a browser sidebar never breaks a line. Arrows are orange, so they read as "go" before you hover.
+
 ## How I build
 
 Four rules run through the work, and the site animates each one:
@@ -30,7 +46,7 @@ Four rules run through the work, and the site animates each one:
 | **Map the motion** | **Architect the truth** | **Automate with guardrails** | **Measure, then harden** |
 | Trace each handoff across teams first | One source of truth, explicit rules | Dry runs, audit trails, no silent writes | Ship, watch it in production, then harden |
 
-## Screenshots
+## The first screen
 
 | Desktop · light | Desktop · dark |
 | :-: | :-: |
@@ -39,6 +55,16 @@ Four rules run through the work, and the site animates each one:
 | Phone · light | Phone · dark |
 | :-: | :-: |
 | <img src="media/mobile-light.png" width="300" alt="Phone, light theme"> | <img src="media/mobile-dark.png" width="300" alt="Phone, dark theme"> |
+
+## A closer look
+
+| Selected systems, on hover | Outcomes |
+| :-: | :-: |
+| ![Each system row fills with its colour on hover, with a small floating preview of its artwork](media/sections/systems-hover.jpg) | ![Outcome cards with odometer numbers and before/after bars](media/sections/outcomes.jpg) |
+| **How I build** | **Toolkit** |
+| ![Principle cards stacking as you scroll, with a faint echo of the current card's icon](media/sections/principles.jpg) | ![Capability cards fanned like a hand, rotating every few seconds](media/sections/toolkit.jpg) |
+| **About** | **A case study** |
+| ![An arched portrait beside the about copy](media/sections/about.jpg) | ![The Carrier Handover Agent case study, with its artwork and headline result](media/sections/case-study.jpg) |
 
 ## Highlights
 
